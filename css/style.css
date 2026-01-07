@@ -59,6 +59,10 @@ a {
     color: inherit;
 }
 
+i {
+    font-size: 1.3rem;
+}
+
 /* NAVBAR */
 .navbar {
     position: fixed;
@@ -310,6 +314,7 @@ a {
     border-radius: 8px;
     margin-bottom: 10px;
     text-align: center;
+    user-select: none;
 }
 
 /* ABOUT */
@@ -530,7 +535,7 @@ a {
 }
 
 /* SMALL ULTRA */
-@media (max-width: 296px) {
+@media (max-width: 240px) {
     body {
         overflow-x: hidden;
     }
