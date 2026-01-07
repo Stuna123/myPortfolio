@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Portfolio de Francis Tabora Afata - Software Engineer Junior spécialisé Web & Backend" />
+        <meta name="description" content="Portfolio de Francis Tabora Afata - Software Engineer Junior" />
         <meta name="author" content="Francis Tabora Afata" />
 
         <title>Francis Tabora Afata | Software Engineer Junior</title>
@@ -16,72 +16,86 @@
     <body>
         <nav class="navbar">
             <div class="nav-container">
-                <span class="logo"> F.TABORA </span>
+                <span class="logo"> <img style="width: 3rem; border-radius: 50%;" src="assets/TABORA.png" alt="Tabora.png"> </span>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-links">
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#projects" data-i18n="navProjects">Projets</a></li>
+                    <li><a href="#experience" data-i18n="navExperience">Expérience</a></li>
+                    <li><a href="#education" data-i18n="navEducation">Formation</a></li>
                     <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="navAbout">À propos</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+                    <li><a href="assets/FTAB-CV.pdf" download data-i18n="navResume"> Mon CV </a></li>
+                    <span class="lang-switch">
+                        <button id="lang-fr" class="lang-btn active"> <a href=""> FR </a> </button>
+                        <button id="lang-en" class="lang-btn"> <a href="index-en.html"> EN </a></button>
+                    </span>  
                 </ul>
             </div>
         </nav>
+
         <header class="hero">
             <div class="hero-content">
                 <div class="avatar">
-                    <!-- Tu peux remplacer par ton image -->
                     <img src="assets/TABORA.png" alt="Francis Tabora Afata">
                 </div>
 
                 <h1>Francis Tabora Afata</h1>
-                <h2>Software Engineer Junior — Web & Backend</h2>
+                <h2 data-i18n="heroTitle">Software Engineer Junior — Web & Backend</h2>
 
-                <p class="hero-tagline">
+                <p class="hero-tagline" data-i18n="heroText">
                     Actuellement à la recherche d'un CDI/CDD en tant qu'ingénieur junior afin de valoriser mes compétences techniques.
                     <br> Motivé, adaptable et orienté solution, je suis prêt à relever les défis. 
                 </p>
 
                 <div class="hero-links">
-                    <a href="#projects">Voir mes projets</a>
-                    <a href="#contact" class="outline">Me contacter</a>
+                    <a href="#projects" data-i18n="seeProject">Voir mes projets</a>
+                    <a href="#contact" class="outline" data-i18n="contactMe">Me contacter</a>
                 </div>
             </div>
         </header>
 
         <section id="projects" class="section">
-            <h2 class="section-title">Projets clés</h2>
+            <h2 class="section-title" data-i18n="keyTitle">Projets Clés</h2>
 
             <div class="projects-grid">
 
                 <!-- Projet 1 -->
                 <article class="project-card">
-                    <img src="assets/bh.png" alt="Burger House Project">
+                    <a href="https://burgerhouse-ft.netlify.app/" target="_blank">
+                        <img src="assets/bh.png" alt="Burger House Project"> 
+                    </a>
 
                     <h3>Burger House — Full Stack App</h3>
-                    <p>
+                    <p data-i18n="descriptionProjects">
                         Projet web: Site web complet avec système de commande, authentification sécurisée
                         et panneau administrateur.
                     </p>
 
                     <ul class="tech-list">
-                        <li>HTML / CSS / JS</li>
+                        <li>HTML5 / CSS3 / JavaScript</li>
                         <li>Node.js / Express</li>
                         <li>JWT / Bcrypt</li>
                         <li>MongoDB</li>
+                        <li>UI Responsive</li>
                     </ul>
 
                     <div class="project-links">
-                        <a href="https://burgerhouse-ft.netlify.app/" target="_blank">Live</a>
                         <a href="https://github.com/Stuna123/burgerRestau-frontend" target="_blank">GitHub</a>
                     </div>
                 </article>
 
                 <!-- Projet 2 -->
                 <article class="project-card">
-                    <img src="assets/budgetmanager.png" alt="Budget Manager">
-                    <h3>Budget Manager</h3>
-                    <p>
+                    <a href="https://budgetmanager-ft.netlify.app/" target="_blank">
+                        <img src="assets/budgetmanager.png" alt="Budget Manager">
+                    </a>
+                    <h3>Budget Manager App</h3>
+                    <p data-i18n="descriptionProjects2">
                         Projet web: Gestion financière personnelle dynamique pour ses revenus et dépenses.
                     </p>
 
@@ -93,16 +107,17 @@
                     </ul>
 
                     <div class="project-links">
-                        <a href="https://budgetmanager-ft.netlify.app/" target="_blank">Live</a>
                         <a href="https://github.com/Stuna123/budgetManager-JS" target="_blank">GitHub</a>
                     </div>
                 </article>
 
                 <!-- Projet 3 -->
                 <article class="project-card">
-                    <img src="assets/kanban.png" alt="Kanban App">
+                    <a href="https://kanbanapp-ft.netlify.app/" target="_blank">
+                        <img src="assets/kanban.png" alt="Kanban App">
+                    </a>
                     <h3>Kanban App</h3>
-                    <p>
+                    <p data-i18n="descriptionProjects3">
                         Projet web: Gestion de tâches inspirée de Trello avec organisation par colonnes.
                     </p>
 
@@ -114,96 +129,129 @@
                     </ul>
 
                     <div class="project-links">
-                        <a href="https://kanbanapp-ft.netlify.app/" target="_blank">Live</a>
                         <a href="https://github.com/Stuna123/kanbanApp-JS" target="_blank">GitHub</a>
                     </div>
                 </article>
 
                 <!-- Projet 4 -->
                 <article class="project-card">
-                    <img src="assets/bookmark.png" alt="Bookmark">
+                    <a href="https://bookmark-js-0mw.pages.dev/" target="_blank">
+                        <img src="assets/bookmark.png" alt="Bookmark">
+                    </a>
 
                     <h3>Bookmark App</h3>
-                    <p>
-                        Projet web: Gestionnaire de favoris personnalisé
+                    <p data-i18n="descriptionProjects4">
+                        Projet web: Gestionnaire des liens favoris personnalisé avec une interface claire et dynamique.
                     </p>
 
                     <ul class="tech-list">
                         <li>HTML5 / CSS3</li>
                         <li>JavaScript</li>
-                        <li>Local Storage</li>
+                        <li>Firebase</li>
                         <li>UI Responsive</li>
                     </ul>
 
                     <div class="project-links">
-                        <a href="https://bookmark-js-0mw.pages.dev/" target="_blank">Live</a>
                         <a href="https://github.com/Stuna123/bookmark-js" target="_blank">GitHub</a>
                     </div>
                 </article>
+
+                <article class="project-card">
+                    <a href="https://taskmate-ft.netlify.app/" target="_blank">
+                        <img src="assets/taskmateReact.png" alt="taskmate-ft">
+                    </a>
+                    <h3> Task Management App </h3>
+                    <p>
+                        Projet web: Application de gestion tâches permettant d'ajouter, modifier, supprimer et filtrer des tâches.
+                    </p>
+
+                    <ul class="tech-list">
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React (state, props)</li>
+                        <li>UI Responsive</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Stuna123/react-TaskManager" target="_blank"> GitHub </a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
         <section id="experience" class="section">
-            <h2 class="section-title">Expérience professionnelle</h2>
+            <h2 class="section-title" data-i18n="expTitle">Expérience professionnelle</h2>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>SAP France — Stagiaire en Automatisation de Test</h3>
-                    <p>
-                        Automatisation de tests fonctionnels et non-régression sur SAP Analytics Cloud.
+                    <h3 data-i18n="expIntern1">SAP France — Stagiaire en Automatisation de Test</h3>
+                    <p class="task" data-i18n="expTask"> Tâches : </p>
+                    <p data-i18n="expText1">
+                        Automatisation de tests fonctionnels et non-régression sur Ocean l'un des modules de SAP Analytics Cloud intégré à Microsoft Excel.
                     </p>
-                    <p>
-                        Comparer les outils et proposer la solution la plus pertinente
+                    <p data-i18n="expText_1">
+                        Comparer les outils et proposer la solution la plus pertinente.
                     </p>
+                    <p>---</p>
                     <p class="tech-used"> Techno: Java · Selenium · Ranorex</p>
                 </div>
 
                 <div class="timeline-item">
-                    <h3>Opinaka — Stagiaire en développement</h3>
-                    <p>
+                    <h3 data-i18n="expIntern2">Opinaka — Stagiaire en développement</h3>
+                    <p data-i18n="expTask" class="task"> Tâches : </p>
+                    <p data-i18n="expText2">
                         Développement de plugins Elasticsearch et interfaces via Strapi & Gatsby.
                     </p>
+                    <p data-i18n="expText_2">
+                        Création d'une liste déroulante JSON des données.
+                    </p>
+                    <p>---</p>
                     <p class="tech-used">Techno: Flutter/Dart · Strapi/Gatsby · Elasticsearch/Kibana</p>
                 </div>
 
                 <div class="timeline-item">
-                    <h3>Office d'Aviation Civile et des Aéroports (OACA) — Stagiaire en développement</h3>
-                    <p>
-                        Mise en oeuvre d'une application de Gestion pour la déclaration de l'employeur
+                    <h3 data-i18n="expIntern3">Office d'Aviation Civile et des Aéroports (OACA Tn) — Stagiaire en développement</h3>
+                    <p class="task" data-i18n="expTask"> Tâches : </p>
+                    <p data-i18n="expText3">
+                        Mise en oeuvre d'une application de Gestion pour la déclaration de l'employeur.
                     </p>
-                    <p>
-                        Mise en place d'une base de données Oracles pour les informations des utilisateurs
+                    <p data-i18n="expText_3">
+                        Mise en place d'une base de données Oracles pour les informations des utilisateurs.
                     </p>
+                    <p>---</p>
                     <p class="tech-used">Techno: UML · PowerAMC · Oracle Forms Developer</p>
                 </div>
 
                 <div class="timeline-item">
-                    <h3>SWIM IT — Stagiaire en développement</h3>
-                    <p>
-                        Mise en oeuvre d'une application de la Gestion de Taxi
+                    <h3 data-i18n="expIntern4">SWIM IT — Stagiaire en développement</h3>
+                    <p class="task" data-i18n="expTask"> Tâches : </p>
+                    <p data-i18n="expText4">
+                        Mise en oeuvre d'une application de la Gestion de Taxi.
                     </p>
-                    <p>
-                        Création d'une base de données pour la récolte des informations des utilisateurs
+                    <p data-i18n="expText_4">
+                        Création d'une base de données pour la récolte des informations des utilisateurs.
                     </p>
+                    <p>---</p>
                     <p class="tech-used">Techno: Visual Studio 2012 · Microsoft Access</p>
                 </div>
             </div>
         </section>
 
         <section id="education" class="section">
-            <h2 class="section-title">Formation académique</h2>
+            <h2 class="section-title" data-i18n="edTitle">Formation académique</h2>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>ESIEA - École d'Ingénieur·e·s d'un numérique utile  </h3>
-                    <p> Formation suivie en vue de l'obtention d'un diplôme d'ingénieur</p>
-                    <p class="tech-used"> Ivry Sur Seine/Laval/Vesale</p>
+                    <h3><a href="https://www.esiea.fr/" target="_blank" title="ESIEA" data-i18n="edText1"> ESIEA - École d'Ingénieur·e·s d'un numérique utile </a></h3>
+                    <p data-i18n="expText5"> Formation suivie en vue de l'obtention d'un diplôme d'ingénieur</p>
+                    <p class="location"> Ivry Sur Seine/Laval/Vesale</p>
                 </div>
 
                 <div class="timeline-item">
-                    <h3>Université Centrale</h3>
-                    <p> Formation suivie en vue d'une Licence Informatique </p>
-                    <p class="tech-used">Tunisie - Tunis </p>
+                    <h3> <a href="https://www.universitecentrale.net/" target="_blank" title="Université Centrale" data-i18n="edText2">Université Centrale</a></h3>
+                    <p data-i18n="expText_5"> Formation suivie en vue d'une Licence Informatique </p>
+                    <p class="location"> Tunis </p>
                 </div>
             </div>
         </section>
@@ -211,42 +259,49 @@
 
         <section id="certifications" class="section">
             <h2 class="section-title">Certifications</h2>
-
-            <ul class="certifications-list">
-                <li>TOEIC, ETS Global : 2023 - 2025</li>
-                <li>AWS Cloud Practitioner - PluralSight</li>
-                <li>Git Fundamentals - PluralSight</li>
-                <li>JavaScript Masterclass - O’Reilly</li>
-            </ul>
+            <a href="https://www.linkedin.com/in/francis-tabora-afata/details/certifications/" target="_blank">
+                <ul class="certifications-list">
+                    <li>TOEIC, ETS Global : 2023 - 2025</li>
+                    <li>Git Fundamentals </li>
+                    <li>AWS Cloud Practitioner </li>
+                    <li>Java SE 17 Fundamentals </li>
+                    <li>Building Web Applications with Node.js and Express </li>
+                    <li>JavaScript Masterclass - Zero to Job-Ready with Hands-On Projects</li>
+                </ul>
+            </a>
         </section>
 
         <section id="about" class="section">
-            <h2 class="section-title">À propos de moi</h2>
+            <h2 class="section-title" data-i18n="aboutTitle">À propos de moi</h2>
 
-            <p class="about-text">
-                Ingénieur diplômé en Software Engineering (ESIEA), passionné par le développement
-                web et backend. J’aime comprendre les systèmes en profondeur, résoudre des problèmes
-                complexes et livrer des solutions propres et fiables.
+            <p class="about-text" data-i18n="aboutText">
+                Ingénieur diplômé en Software Engineering (ESIEA), passionné par le développement web et backend. 
+                J'aime comprendre les systèmes en profondeur, résoudre des problèmes complexes et livrer des solutions propres et fiables.
+                <br><br>
+                Curieux et ouvert d'esprit, je reste constamment à l'écoute des nouvelles technologies
+                et je n'hésite pas à sortir de ma zone de confort pour apprendre, m'adapter
+                et évoluer dans des environnements techniques variés.
             </p>
         </section>
-
         <section id="contact" class="section">
             <h2 class="section-title">Contact</h2>
 
-            <p id="success-message" class="success-message">Message envoyé avec succès !</p>
+            <p id="success-message" class="success-message" style="text-align: center;" data-i18n="msgSuccess">Message envoyé avec succès !</p>
             <form id="contact-form" action="https://formspree.io/f/xykggrjv" method="POST" class="contact-form">
                 
-                <input type="text" name="name" placeholder="Votre nom" autocomplete="off" required/>
-                <input type="email" name="email" id="email" placeholder="Votre email" autocomplete="off" required/>
-                <p id="email-error" class="error-message"> Veuillez entrer une adresse email valide !</p>
-                <textarea name="message" placeholder="Votre message" required></textarea>
-
-                <button type="submit">Envoyer</button>
+                <input type="text" name="name" data-i18n-placeholder="namePlaceholder" placeholder="Votre Nom" autocomplete="off" required/>
+                <input type="email" name="email" id="email" data-i18n-placeholder="emailPlaceholder" placeholder="Votre Email" title="Veuillez saisir votre véritable adresse e-mail, et je vous répondrai. 😊" autocomplete="off" required/>
+                <p id="email-error" class="error-message" data-i18n="msgTextEmail"> Veuillez entrer une adresse email valide (ex: tata@gmai.com)!</p>
+                <textarea name="message" data-i18n-placeholder="messagePlaceholder" placeholder="Votre Message" required></textarea>
+                <button type="submit" data-i18n="msgSend">Envoyer</button>
             </form>
         </section>
 
-        <footer class="footer">
-            <p>© 2025 — Francis Tabora Afata</p>
+        <footer class="footer" data-i18n="footerText">
+            <p>
+                © 2026 — Conçu et développé par <strong>Francis Tabora Afata</strong>
+                <p> Tous droits réservés. </p>
+            </p>
 
             <div class="footer-links">
                 <a href="https://github.com/Stuna123" target="_blank" aria-label="GitHub">
@@ -258,11 +313,11 @@
                 <a href="https://codepen.io/Francis-tabora" target="_blank" aria-label="CodePen">
                     <i class="fab fa-codepen"></i>
                 </a>
+
                 <a href="https://app.netlify.com/teams/stuna123/projects" target="_blank" aria-label="Netlify">
                     <i class="fas fa-cloud"></i>
                 </a>
             </div>
-
         </footer>
 
         <button id="backToTop" aria-label="Retour en haut">↑</button>

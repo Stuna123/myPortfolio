@@ -17,23 +17,23 @@ Ce portfolio a pour objectif de présenter :
 - mes projets concrets
 - ma stack technique
 - ma façon de structurer un projet proprement
-
+Screenshot à la fin
 ---
 
 ## 🛠️ Stack technique
 
-### Frontend
+## Frontend
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 
-### Backend (présenté dans les projets)
+## Backend (présenté dans les projets)
 - Node.js
 - Express
 - MongoDB / Mongoose
 - Authentification JWT & bcrypt
 
-### Outils
+## Outils
 - Git & GitHub
 - Netlify
 - Render
@@ -42,27 +42,25 @@ Ce portfolio a pour objectif de présenter :
 
 ## 📂 Projets présentés
 
-### Burger House (Fullstack)
+## Burger House (Fullstack)
 Application de commande en ligne avec :
 - interface pour passer la commande 
 - authentification sécurisée (JWT & bcrypt)
 - panneau admin
 - statistiques avec graphique
-
-**Stack** : HTML5, CSS3, JavaScript, Node.js, Express, MongoDB  
+Stack : __HTML5, CSS3, JavaScript, Node.js, Express, MongoDB__
 Repo : https://github.com/Stuna123/burgerRestau-frontend 
 Live : https://burgerhouse-ft.netlify.app/
 ---
 
-### Bookmark App
-Gestion de favoris avec authentification et sauvegarde cloud.
-
-**Stack** : Firebase Auth & Storage  
+## Bookmark App
+- Gestion de favoris avec authentification et sauvegarde cloud.
+Stack: __Firebase Auth & Storage__  
 Repo : https://github.com/Stuna123/bookmark-js
 Live : https://bookmark-js-0mw.pages.dev/
 ---
 
-### Budget Manager
+## Budget Manager
 Application de gestion de dépenses avec graphiques.
 
 **Stack** : HTML5, CSS3, JavaScript  
@@ -70,7 +68,7 @@ Repo : https://github.com/Stuna123/budgetManager-JS
 Live : https://budgetmanager-ft.netlify.app/
 
 
-### Kanban App
+## Kanban App
 Application de gestion de projet modèle Trello.
 
 **Stack** : HTML5, CSS3, JavaScript 
@@ -78,3 +76,6 @@ Repo : https://github.com/Stuna123/kanbanApp-JS
 Live : https://kanbanapp-ft.netlify.app/
 
 ---
+
+## Screenshot
+![alt text](image.png)
