@@ -1,0 +1,53 @@
+🚀 New project Completed ─ CineWave (React + TMDB API)
+
+I've just finished CineWave, a movie discovery web app built with React and The Movie Database (TMDB) API.
+
+
+
+This project was inspired by a tutorial from Shubham Sarda, which helped me strengthen my understanding of React architecture, routing, and API integration.
+
+
+
+🔧 On top of the base project, I implemented several improvements:
+
+
+
+• Real-time search using onChange
+
+• Search optimization with debounce to limit API calls
+
+• Loader and user feedback during API requests
+
+• Prevention of empty search queries
+
+• Safer search handling using trim() and encodeURIComponent
+
+
+🎯 Key features:
+
+
+• Browse popular, top-rated, and upcoming movies
+
+• Detailed movie pages (overview, genres, ratings, runtime, budget, revenue, IMDb link)
+
+• Dark / light mode with persistence
+
+• Smooth navigation with React Router
+
+
+
+This project helped me move beyond just following a tutorial and focus on code quality, UX, and performance.
+
+Here's the live version : https://cinewave-ft.netlify.app/
+
+📽️ Demo video below
+
+💻 GitHub repository in comments
+
+
+
+Thanks again to Shubham Sarda for the great learning resource 🙌
+
+
+
+#React #JavaScript #WebDevelopment #Frontend #LearningByDoing #TMDB #OpenSource #DeveloperJourney #opentowork #rechercheemploi
