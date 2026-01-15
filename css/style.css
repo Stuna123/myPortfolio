@@ -357,6 +357,13 @@ i {
     background: #0ea5e9;
 }
 
+.message {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    resize: vertical;
+}
+
 /* SUCCESS MESSAGE */
 .success-message {
     max-height: 0;

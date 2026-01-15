@@ -17,7 +17,7 @@
     <body>
         <nav class="navbar">
             <div class="nav-container">
-                <span class="logo"> <img style="border-radius: 50%; width: 3rem;" src="assets/images/TABORA.png" alt="Tabora.png"> </span>
+                <span class="logo"> <a href="#hero"> <img style="width: 3rem; border-radius: 50%;" src="assets/images/TABORA.png" alt="Tabora.png"> </a></span>
                 <button class="hamburger" aria-label="Menu">
                     <span></span>
                     <span></span>
@@ -39,18 +39,20 @@
             </div>
         </nav>
 
-        <header class="hero">
+        <header class="hero" id="hero">
             <div class="hero-content">
                 <div class="avatar">
                     <img src="assets/images/TABORA.png" alt="Francis Tabora Afata">
                 </div>
 
                 <h1> Francis Tabora Afata </h1>
-                <h2> Software Engineer - Frontend & Backend </h2>
+                <h2> Junior Full-Stack Web Developer - Frontend & Backend </h2>
 
                 <p class="hero-tagline">
-                    Currently seeking a full-time or fixed-term position as a recent Software Engineering graduate in order to apply and grow my technical skills.
-                    <br> Motivated, adaptable and solution-oriented, I am ready to take on new challenges.
+                    I build <strong>modern web applications</strong>, from frontend to backend,
+                    <br/> with a strong focus on <strong>clean code, security, and user experience.</strong>
+                    <br/>📍 France 
+                    <br/>📩 <strong> Open to work for web development opportunities (CDD / CDI) </strong>
                 </p>
 
                 <div class="hero-links">
@@ -306,10 +308,10 @@
             <form id="contact-form" action="https://formspree.io/f/xykggrjv" method="POST" class="contact-form">
                 
                 <input type="text" name="name" placeholder="Your Full Name" autocomplete="off" required/>
-                <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off" title="Please, enter your true email and I will respond. 😊" required/>
+                <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off" required/>
                 <p id="email-error" class="error-message"> Please enter a valid email address (ex: toto@gmai.com)!</p>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-
+                <textarea class="message" name="message" placeholder="Your Message&#10;&#10;E.g. job opportunity, project, discussion&#10;I'll be happy to reply 😊" required></textarea>
+                <small> Usually responds within 24-48h </small>
                 <button type="submit">Send</button>
             </form>
         </section>
