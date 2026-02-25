@@ -265,12 +265,18 @@ i {
 .project-links {
     display: flex;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .project-links a {
     font-size: 1rem;
     font-weight: 700;
     color: var(--primary-color);
+}
+
+.project-links a:hover {
+    color: #085e86;
+    transition: 0.3s;
 }
 
 /* EXPERIENCE Pro & FORMATION ACADEMIQUE */
