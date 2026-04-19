@@ -1,380 +1,940 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Portfolio de Francis Tabora Afata - Software Engineer Junior" />
-        <meta name="author" content="Francis Tabora Afata" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Francis Tabora Afata - Software Engineer Junior"
+    />
+    <meta name="author" content="Francis Tabora Afata" />
 
-        <title>Portfolio</title>
+    <title>Francis TABORA AFATA — Portfolio</title>
 
-        <link rel="shortcut icon" href="assets/ico/page_portfolio.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+    <link
+      rel="shortcut icon"
+      href="assets/ico/page_portfolio.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <body>
-        <nav class="navbar">
-            <div class="nav-container">
-                <span class="logo"> <a href="#hero"> <img style="width: 3rem; border-radius: 50%;" src="assets/images/TABORA.png" alt="Tabora.png"> </a></span>
-                <button class="hamburger" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="#projects" data-i18n="navProjects">Projets</a></li>
-                    <li><a href="#experience" data-i18n="navExperience">Expérience</a></li>
-                    <li><a href="#education" data-i18n="navEducation">Formation</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#about" data-i18n="navAbout">À propos</a></li>
-                    <li><a href="#contact" data-i18n="navContact">Contact</a></li>
-                    <li><a href="assets/CV/FT-CV.pdf" download data-i18n="navResume"> Mon CV </a></li>
-                    <span class="lang-switch">
-                        <button id="lang-fr" class="lang-btn active"> <a href=""> FR </a> </button>
-                        <button id="lang-en" class="lang-btn"> <a href="index-en.html"> EN </a></button>
-                    </span>  
-                </ul>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- ================= Navbar ================= -->
+    <nav class="fixed inset-x-0 top-0 z-50">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 backdrop-blur-xl shadow-lg"
+        >
+          <!-- Logo + identité -->
+          <a href="#hero" class="flex items-center gap-3">
+            <img
+              src="assets/images/TABORA.png"
+              alt="Tabora"
+              class="h-11 w-11 rounded-full border border-white/10 object-cover"
+            />
+
+            <div class="hidden sm:block">
+              <p class="text-sm font-semibold text-white">Francis Tabora Afata</p>
+              <p class="text-xs text-slate-400">
+                Développeur Full-Stack Web Developer
+              </p>
             </div>
-        </nav>
+          </a>
 
-        <header class="hero" id="hero">
-            <div class="hero-content">
-                <div class="avatar">
-                    <img src="assets/images/TABORA.png" alt="Francis Tabora Afata">
+          <!-- Liens desktop -->
+          <div class="hidden items-center gap-6 text-sm text-slate-300 lg:flex">
+            <a
+              href="#projects"
+              class="relative text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Projets
+            </a>
+
+            <a
+              href="#skills"
+              class="relative text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Compétences
+            </a>
+
+            <a
+              href="#experience"
+              class="relative text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Expérience
+            </a>
+
+            <a
+              href="#contact"
+              class="relative text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Contact
+            </a>
+          </div>
+
+          <!-- Actions desktop -->
+          <div class="hidden items-center gap-3 lg:flex">
+            <a
+              href="assets/CV/TaboraCV.pdf"
+              download
+              class="inline-flex items-center rounded-xl bg-sky-400 px-4 py-2 text-sm text-slate-950 transition hover:-translate-y-0.5 hover:text-white hover:opacity-90"
+            >
+              Télécharger CV
+            </a>
+
+            <div
+              class="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 p-1"
+            >
+              <a
+                href="index.html"
+                class="rounded-lg bg-white/10 px-3 py-1 text-sm text-white"
+              >
+                FR
+              </a>
+              <a
+                href="index-en.html"
+                class="rounded-lg px-3 py-1 text-sm text-slate-300 transition hover:text-white"
+              >
+                EN
+              </a>
+            </div>
+          </div>
+
+          <!-- Bouton hamburger -->
+          <button
+            class="hamburger-btn inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-white lg:hidden"
+            aria-label="Ouvrir le menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <div
+          class="mobile-menu hidden mt-3 rounded-2xl border border-white/10 bg-slate-950/90 p-4 backdrop-blur-xl shadow-lg lg:hidden"
+        >
+          <div class="flex flex-col gap-3 text-sm text-slate-300">
+            <a
+              href="#projects"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Projets
+            </a>
+
+            <a
+              href="#skills"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Compétences
+            </a>
+
+            <a
+              href="#experience"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Expérience
+            </a>
+
+            <a
+              href="#education"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Formation
+            </a>
+
+            <a
+              href="#certifications"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Certifications
+            </a>
+
+            <a
+              href="#about"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              À propos
+            </a>
+
+            <a
+              href="#contact"
+              class="mobile-link relative w-fit text-slate-300 transition-colors duration-300 hover:text-sky-400 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+            >
+              Contact
+            </a>
+
+            <a
+              href="assets/CV/TaboraCV.pdf"
+              download
+              class="mobile-link w-fit text-sky-300 transition hover:text-white"
+            >
+              Télécharger CV
+            </a>
+
+            <div class="flex items-center gap-2 pt-2">
+              <a
+                href="index.html"
+                class="rounded-lg bg-white/10 px-3 py-1 text-sm text-white"
+              >
+                FR
+              </a>
+              <a
+                href="index-en.html"
+                class="rounded-lg px-3 py-1 text-sm text-slate-300 transition hover:text-white"
+              >
+                EN
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= Hero ================= -->
+    <header id="hero" class="relative overflow-hidden">
+      <div class="mx-auto max-w-6xl px-6 pb-20 pt-32 md:pb-28 md:pt-40">
+        <div class="grid items-center gap-12 md:grid-cols-2">
+          <!-- Colonne texte -->
+          <div class="reveal space-y-6">
+            <span
+              class="inline-flex items-center rounded-full border border-sky-400/20 bg-sky-400/10 px-4 py-2 text-md text-sky-300"
+            >
+              Disponible pour des opportunités web
+            </span>
+
+            <div class="space-y-3">
+              <h1
+                class="text-4xl font-extrabold leading-tight text-white md:text-6xl select-none"
+              >
+                Francis Tabora Afata
+              </h1>
+              <h2 class="text-lg font-medium text-slate-300 md:text-2xl">
+                Développeur Web / Full-Stack Junior — Frontend & Backend
+              </h2>
+            </div>
+
+            <p class="max-w-2xl leading-7 text-slate-300">
+              Je conçois des applications web modernes, du frontend au backend,
+              avec une attention particulière à la qualité du code, la sécurité,
+              l’expérience utilisateur et le déploiement.
+            </p>
+
+            <!-- Boutons CTA -->
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center rounded-xl bg-sky-400 px-5 py-3 font-medium text-slate-950 transition hover:-translate-y-0.5 hover:text-white hover:opacity-90"
+              >
+                Voir mes projets
+              </a>
+              <a
+                href="assets/CV/TaboraCV.pdf"
+                download
+                class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-5 py-3 font-medium text-white transition hover:bg-white/10"
+              >
+                Télécharger mon CV
+              </a>
+            </div>
+
+            <div class="mt-2 text-sm text-slate-400">
+              📍 France · 📩 Disponible pour opportunités web (CDD / CDI)
+            </div>
+          </div>
+
+          <!-- Colonne photo -->
+          <div class="reveal flex justify-center">
+            <div class="relative">
+              <!-- Halo lumineux -->
+              <div
+                class="absolute inset-0 rounded-full bg-sky-400/20 blur-3xl"
+              ></div>
+
+              <!-- Cercle photo -->
+              <div
+                class="relative h-64 w-64 rounded-full border border-white/10 bg-white/5 p-3 backdrop-blur-md md:h-80 md:w-80"
+              >
+                <img
+                  src="assets/images/TABORA.png"
+                  alt="Tabora"
+                  class="h-full w-full rounded-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Corps principal -->
+    <main>
+
+       <!--  Projets -->
+        <section id="projects" class="mx-auto max-w-6xl px-6 py-20">
+            <!-- Titre -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white md:text-4xl">
+                Projets principaux
+                </h2>
+                <p class="mt-3 text-slate-400">
+                    Quelques projets représentatifs de mes compétences fullstack
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid gap-8 md:grid-cols-2">
+                
+                <!-- Card 1 -->
+                <article class="group rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition hover:-translate-y-2 hover:shadow-xl"
+                >
+                    <!-- Image -->
+                    <a
+                        href="https://bikerent-java-springboot.onrender.com/"
+                        target="_blank"
+                        class="block overflow-hidden rounded-xl"
+                    >
+                        <img
+                            src="assets/images/bikerent.jpeg"
+                            alt="Aperçu du projet Bike Rent"
+                            class="h-52 w-full rounded-xl object-cover transition duration-500 group-hover:scale-105"
+                        />
+                    </a>
+
+                    <div class="mt-5">
+                        <!-- Titre -->
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-xl font-semibold text-white">Bike Rent</h3>
+                            <span class="text-xs text-slate-400">Java</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="mt-3 text-sm leading-7 text-slate-300">
+                            Application de réservation de vélos avec authentification
+                            sécurisée, gestion des rôles et dashboard administrateur.
+                        </p>
+
+                        <!-- Tech -->
+                        <div class="mt-4 flex flex-wrap gap-2 select-none">
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Java 17</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Spring Boot</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">MySQL / PostgreSQL</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Spring Security & JPA</span>
+                        </div>
+
+                        <!-- Liens -->
+                        <div class="mt-6 flex gap-3">
+                        <a
+                            href="https://bikerent-java-springboot.onrender.com/"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            Live
+                        </a>
+                        <a
+                            href="https://github.com/Stuna123/bikerent-java-springboot"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            GitHub
+                        </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article
+                    class="group rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition hover:-translate-y-2 hover:shadow-xl"
+                >
+                    <!-- Image -->
+                    <a
+                        href="https://beatstore-ft.netlify.app"
+                        target="_blank"
+                        class="block overflow-hidden rounded-xl"
+                    >
+                        <img
+                            src="assets/images/beatstore.PNG"
+                            alt="Aperçu du projet BeatStore"
+                            class="h-52 w-full rounded-xl object-cover transition duration-500 group-hover:scale-105"
+                        />
+                    </a>
+
+                    <div class="mt-5">
+                        <!-- Titre -->
+                        <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-semibold text-white">BeatStore</h3>
+                        <span class="text-xs text-slate-400">React</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="mt-3 text-sm leading-7 text-slate-300">
+                        Plateforme e-commerce permettant aux artistes de vendre leurs
+                        beats en ligne. Authentification sécurisée (JWT + Bcrypt),
+                        panier dynamique et paiement Stripe.
+                        </p>
+
+                        <!-- Tech -->
+                        <div class="mt-4 flex flex-wrap gap-2 select-none">
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">React + Vite</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Node.js / Express</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Stripe + Webhooks</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">JWT / Bcrypt</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">MongoDB / Mongoose</span>
+                        </div>
+
+                        <!-- Liens -->
+                        <div class="mt-6 flex gap-3">
+                        <a
+                            href="https://beatstore-ft.netlify.app"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            Live
+                        </a>
+                        <a
+                            href="https://github.com/Stuna123/beatstore-ft"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            GitHub
+                        </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article
+                    class="group rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition hover:-translate-y-2 hover:shadow-xl"
+                >
+                    <!-- Image -->
+                    <a
+                        href="http://nmkroyal.fr/"
+                        target="_blank"
+                        class="block overflow-hidden rounded-xl"
+                    >
+                        <img
+                            src="assets/images/nmk.jpg"
+                            alt="Aperçu du projet NMK Royal"
+                            class="h-52 w-full rounded-xl object-cover transition duration-500 group-hover:scale-105"
+                        />
+                    </a>
+
+                    <div class="mt-5">
+                        <!-- Titre -->
+                        <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-semibold text-white">NMK Royal</h3>
+                        <span class="text-xs text-slate-400">Client</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="mt-3 text-sm leading-7 text-slate-300">
+                        Site vitrine professionnel avec formulaire sécurisé,
+                        optimisation SEO et design responsive.
+                        </p>
+
+                        <!-- Tech -->
+                        <div class="mt-4 flex flex-wrap gap-2 select-none">
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Next.js</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">React</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Tailwind</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">SEO</span>
+                        </div>
+
+                        <!-- Liens -->
+                        <div class="mt-6 flex gap-3">
+                        <a
+                            href="http://nmkroyal.fr/"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            Live
+                        </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article
+                    class="group rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md transition hover:-translate-y-2 hover:shadow-xl"
+                >
+                    <!-- Image -->
+                    <a
+                        href="https://admin-dashboard-ft.netlify.app/"
+                        target="_blank"
+                        class="block overflow-hidden rounded-xl"
+                    >
+                        <img
+                            src="assets/images/angular.PNG"
+                            alt="Aperçu du projet Angular Dashboard"
+                            class="h-52 w-full rounded-xl object-cover transition duration-500 group-hover:scale-105"
+                        />
+                    </a>
+
+                    <div class="mt-5">
+                        <!-- Titre -->
+                        <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-semibold text-white">Angular Dashboard</h3>
+                        <span class="text-xs text-slate-400">Angular</span>
+                        </div>
+
+                        <!-- Description -->
+                        <p class="mt-3 text-sm leading-7 text-slate-300">
+                        Dashboard administrateur avec authentification,
+                        gestion des routes protégées et CRUD dynamique.
+                        </p>
+
+                        <!-- Tech -->
+                        <div class="mt-4 flex flex-wrap gap-2 select-none">
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">Angular</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">TypeScript</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">RxJS</span>
+                            <span class="rounded-lg bg-slate-800 px-3 py-1 text-sm text-slate-200">API REST</span>
+                        </div>
+
+                        <!-- Liens -->
+                        <div class="mt-6 flex gap-3">
+                        <a
+                            href="https://admin-dashboard-ft.netlify.app/"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            Live
+                        </a>
+                        <a
+                            href="https://github.com/Stuna123/dashboard-angular-pro"
+                            target="_blank"
+                            class="rounded-lg bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20 hover:text-yellow-400"
+                        >
+                            GitHub
+                        </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="mx-auto max-w-6xl px-6 py-20">
+            <!-- Titre -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white md:text-4xl">
+                Compétences
+                </h2>
+                <p class="mt-3 text-slate-400">
+                Technologies et outils que j’utilise pour concevoir des applications web modernes
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid gap-8 md:grid-cols-3">
+
+                <!-- Frontend -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">Frontend</h3>
+                    <ul class="mt-5 space-y-3 text-slate-300">
+                        <li class="select-none">React / Next.js</li>
+                        <li class="select-none">Angular</li>
+                        <li class="select-none">JavaScript (ES6+) / TypeScript</li>
+                        <li class="select-none">HTML / CSS / Tailwind</li>
+                    </ul>
+                </article>
+
+                <!-- Backend -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">Backend</h3>
+                    <ul class="mt-5 space-y-3 text-slate-300">
+                        <li class="select-none">Java / Spring Boot</li>
+                        <li class="select-none">Node.js / Express</li>
+                        <li class="select-none">API REST</li>
+                        <li class="select-none">MongoDB / MySQL</li>
+                        <li class="select-none">JWT / Bcrypt / Spring Security</li>
+                    </ul>
+                </article>
+
+                <!-- Outils -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">Outils</h3>
+                    <ul class="mt-5 space-y-3 text-slate-300">
+                        <li class="select-none">Git / GitHub</li>
+                        <li class="select-none">Netlify / Render</li>
+                        <li class="select-none">Postman</li>
+                        <li class="select-none">Linux / Windows</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experiences -->
+        <section id="experience" class="mx-auto max-w-6xl px-6 py-20">
+            <!-- Titre -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white md:text-4xl">
+                Expérience professionnelle
+                </h2>
+                <p class="mt-3 text-slate-400">
+                    Experiences qui ont renforcé ma rigueur, ma logique technique et ma capacité d’adaptation
+                </p>
+            </div>
+
+            <!-- Liste des expériences -->
+            <div class="space-y-8">
+                <!-- SAP -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">
+                        SAP France — Stagiaire en automatisation de test
+                    </h3>
+
+                    <p class="mt-4 text-slate-300 leading-7">
+                        • Automatisation de tests fonctionnels et non-régression sur Ocean, un module de SAP Analytics Cloud intégré à Microsoft Excel.
+                    </p>
+                    <p class="text-slate-300 leading-7">
+                        • Analyse des outils et proposition de la solution la plus pertinente.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2 select-none">
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Java</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Selenium</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Ranorex</span>
+                    </div>
+                </article>
+
+                <!-- Opinaka -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">
+                        Opinaka — Stagiaire en développement
+                    </h3>
+
+                    <p class="mt-4 text-slate-300 leading-7">
+                        • Développement de plugins Elasticsearch et d’interfaces avec Strapi et Gatsby.
+                    </p>
+                    <p class="text-slate-300 leading-7">
+                        • Création d’une liste déroulante JSON à partir des données.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2 select-none">
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Flutter / Dart</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Strapi</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Gatsby</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Elasticsearch</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Kibana</span>
+                    </div>
+                </article>
+
+                <!-- OACA -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">
+                        OACA Tunisie — Stagiaire en développement
+                    </h3>
+
+                    <p class="mt-4 text-slate-300 leading-7">
+                        • Mise en œuvre d’une application de gestion pour la déclaration de l’employeur.
+                    </p>
+                    <p class="text-slate-300 leading-7">
+                        • Mise en place d’une base de données Oracle pour les informations des utilisateurs.
+                    </p>
+
+                    <div class="mt-5 flex flex-wrap gap-2 select-none">
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">UML</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">PowerAMC</span>
+                        <span class="rounded-lg bg-slate-600 px-3 py-1 text-sm text-slate-200">Oracle Forms Developer</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education  -->
+        <section id="education" class="mx-auto max-w-6xl px-6 py-20">
+            <!-- Titre -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white md:text-4xl">
+                    Formation académique
+                </h2>
+                <p class="mt-3 text-slate-400">
+                    Un parcours orienté ingénierie logicielle et informatique
+                </p>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- ESIEA -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">
+                        ESIEA — École d’ingénieur·e·s d’un numérique utile
+                    </h3>
+
+                    <p class="mt-3 text-slate-300">
+                        Diplôme d’ingénieur en Software Engineering
+                    </p>
+
+                    <p class="mt-2 text-sm text-sky-400">
+                        Ivry-sur-Seine / Laval
+                    </p>
+                </article>
+
+                <!-- Université Centrale -->
+                <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md transition hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-white">
+                        Université Centrale de Tunis — Polytech Centrale
+                    </h3>
+
+                    <p class="mt-3 text-slate-300">
+                        Licence en Informatique
+                    </p>
+
+                    <p class="mt-2 text-sm text-sky-400">
+                        Tunis
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="mx-auto max-w-6xl px-6 py-20">
+            <!-- Titre -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white md:text-4xl">
+                    Certifications
+                </h2>
+                <p class="mt-3 text-slate-400">
+                    Quelques certifications renforçant mes bases techniques
+                </p>
+            </div>
+
+            <!-- Liste certificats -->
+            <div class="grid gap-4 md:grid-cols-2">
+                <div class="reveal rounded-xl border border-white/10 bg-white/5 p-4 text-slate-200 backdrop-blur-md hover:-translate-y-1 hover:shadow-lg">
+                    TOEIC, ETS Global (725/990) : 2023 - 2025
+                </div>
+                
+                <div class="reveal rounded-xl border border-white/10 bg-white/5 p-4 text-slate-200 backdrop-blur-md hover:-translate-y-1 hover:shadow-lg">
+                    Git Fundamentals
                 </div>
 
-                <h1>Francis Tabora Afata</h1>
-                <h2 data-i18n="heroTitle">Développeur Web / Full-Stack Junior — Frontend & Backend</h2>
+                <div class="reveal rounded-xl border border-white/10 bg-white/5 p-4 text-slate-200 backdrop-blur-md hover:-translate-y-1 hover:shadow-lg">
+                    AWS Cloud Practitioner
+                </div>
 
-                <p class="hero-tagline" data-i18n="heroText">
-                    Je conçois des <strong>applications web modernes</strong>, du frontend au backend, 
-                    <br/>avec une attention particulière à la <strong>qualité du code, la sécurité et l'expérience utilisateur.</strong>
-                    <br/>📍 France 
-                    <br/>📩 <strong> Disponible pour des opportuntés web (CDD / CDI) </strong> 
-                    
+                <div class="reveal rounded-xl border border-white/10 bg-white/5 p-4 text-slate-200 backdrop-blur-md hover:-translate-y-1 hover:shadow-lg">
+                    Java SE 17 Fundamentals
+                </div>
+
+                <div class="reveal rounded-xl border border-white/10 bg-white/5 p-4 text-slate-200 backdrop-blur-md hover:-translate-y-1 hover:shadow-lg">
+                    JavaScript Masterclass — Hands-On Projects
+                </div>
+
+                <div class="reveal rounded-xl border border-white/10 bg-white/5 p-4 text-slate-200 backdrop-blur-md hover:-translate-y-1 hover:shadow-lg">
+                    ReactJS Masterclass — Zero to Job-Ready
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="mx-auto max-w-6xl px-6 py-20">
+        
+            <!-- Titre -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white md:text-4xl">
+                    À propos
+                </h2>
+                <p class="mt-3 text-slate-400">
+                    Un profil orienté fullstack, rigoureux et ouvert aux nouvelles technologies
+                </p>
+            </div>
+
+            <!-- Details -->
+            <div class="mx-auto max-w-3xl reveal rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-md">
+                <p class="text-lg leading-6 text-slate-300">
+                    Ingénieur diplômé en <strong class="text-white-200">Software Engineering</strong>,
+                    je conçois des applications web modernes du frontend au backend, avec une attention
+                    particulière portée à la <strong class="text-white-200">qualité du code</strong>,
+                    la <strong class="text-white-200">sécurité</strong> et l’
+                    <strong class="text-white-200">expérience utilisateur</strong>.
                 </p>
 
-                <div class="hero-links">
-                    <a href="#projects" data-i18n="seeProject">Voir mes projets</a>
-                    <a href="#contact" class="outline" data-i18n="contactMe">Me contacter</a>
-                </div>
-            </div>
-        </header>
-
-        <section id="projects" class="section">
-            <h2 class="section-title" data-i18n="keyTitle">Projets Clés</h2>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <a href="https://beatstore-ft.netlify.app/" target="_blank">
-                        <img src="assets/images/beatstore.PNG" alt="cinewave-ft">
-                    </a>
-                    <h3> BeatStore ─ Fullstack MERN </h3>
-                    <p>
-                        Projet web : Plateforme e-commerce permettant d’acheter des beats en ligne avec
-                        authentification, panier dynamique et paiement sécurisé via Stripe.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>React + Vite</li>
-                        <li>Node.js / Express </li>
-                        <li>Stripe + Webhooks</li>
-                        <li>JWT/Bcrypt</li>
-                        <li>Mongo DB / Mongoose</li>
-                    </ul>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/beatstore-ft" target="_blank">GitHub</a>
-                        <a href="https://beatstore-ft.netlify.app/" target="_blank"> Demo - cliquez ici </a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <a href="https://cinewave-ft.netlify.app/" target="_blank">
-                        <img src="assets/images/cinewave.png" alt="cinewave-ft">
-                    </a>
-                    <h3> CineWave ─ App web de films </h3>
-                    <p>
-                        Projet web: Application web permettant de découvrir et rechercher des films via l'API TMDB.
-                        Affichage des films populaires, les mieux notés et à venir.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>React</li>
-                        <li>React Router DOM</li>
-                        <li>Tailwind CSS</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>API TMDB</li>
-                    </ul>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/cinewave" target="_blank">GitHub</a>
-                        <a href="https://cinewave-ft.netlify.app/" target="_blank"> Demo - cliquez ici </a>
-                    </div>
-                </article>
-            
-                <article class="project-card">
-                    <a href="https://burgerhouse-ft.netlify.app/" target="_blank">
-                        <img src="assets/images/bh.png" alt="Burger House Project"> 
-                    </a>
-
-                    <h3>Burger House — Full Stack App</h3>
-                    <p data-i18n="descriptionProjects">
-                        Projet web: Site web complet avec système de commande, authentification sécurisée
-                        et panneau administrateur.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript (ES6+) </li>
-                        <li>Node.js / Express</li>
-                        <li>JWT / Bcrypt</li>
-                        <li>MongoDB</li>
-                        <li>UI Responsive</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/burgerRestau-frontend" target="_blank">GitHub</a>
-                        <a href="https://burgerhouse-ft.netlify.app/" target="_blank"> Demo - cliquez ici </a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <a href="https://budgetmanager-ft.netlify.app/" target="_blank">
-                        <img src="assets/images/budgetmanager.png" alt="Budget Manager">
-                    </a>
-                    <h3>Budget Manager App</h3>
-                    <p data-i18n="descriptionProjects2">
-                        Projet web: Gestion financière personnelle dynamique pour ses revenus et dépenses.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Local Storage</li>
-                        <li>UI Responsive</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/budgetManager-JS" target="_blank">GitHub</a>
-                        <a href="https://budgetmanager-ft.netlify.app/" target="_blank">Demo - cliquez ici</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <a href="https://kanbanapp-ft.netlify.app/" target="_blank">
-                        <img src="assets/images/kanban.png" alt="Kanban App">
-                    </a>
-                    <h3>Kanban App</h3>
-                    <p data-i18n="descriptionProjects3">
-                        Projet web: Gestion de tâches inspirée de Trello avec organisation par colonnes.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Local Storage</li>
-                        <li>UI Responsive</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/kanbanApp-JS" target="_blank">GitHub</a>
-                        <a href="https://kanbanapp-ft.netlify.app/" target="_blank">Demo - cliquez ici</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <a href="https://bookmark-js-0mw.pages.dev/" target="_blank">
-                        <img src="assets/images/bookmark.png" alt="Bookmark">
-                    </a>
-
-                    <h3>Bookmark App</h3>
-                    <p data-i18n="descriptionProjects4">
-                        Projet web: Gestionnaire des liens favoris personnalisé avec une interface claire et dynamique.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Firebase</li>
-                        <li>UI Responsive</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/bookmark-js" target="_blank">GitHub</a>
-                        <a href="https://bookmark-js-0mw.pages.dev/" target="_blank">Demo - cliquez ici</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <a href="https://taskmate-ft.netlify.app/" target="_blank">
-                        <img src="assets/images/taskmateReact.png" alt="taskmate-ft">
-                    </a>
-                    <h3> Task Management App </h3>
-                    <p>
-                        Projet web: Application de gestion tâches permettant d'ajouter, modifier, supprimer et filtrer des tâches.
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React (state, props)</li>
-                        <li>UI Responsive</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Stuna123/react-TaskManager" target="_blank"> GitHub </a>
-                        <a href="https://taskmate-ft.netlify.app/" target="_blank"> Demo - cliquez ici</a>
-                    </div>
-                </article>
-
+                <p class="mt-6 leading-6 text-slate-300">
+                    Curieux et ouvert d’esprit, je reste à l’écoute des nouvelles technologies
+                    et j’aime évoluer dans des environnements variés, que ce soit avec
+                    <span class="text-sky-400">React</span>,
+                    <span class="text-sky-400">Angular</span>,
+                    <span class="text-sky-400">Node.js</span> ou
+                    <span class="text-sky-400">Java Spring Boot</span>.
+                </p>
             </div>
         </section>
 
-        <section id="experience" class="section">
-            <h2 class="section-title" data-i18n="expTitle">Expérience professionnelle</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3 data-i18n="expIntern1">SAP France — Stagiaire en Automatisation de Test</h3>
-                    <p class="task" data-i18n="expTask"> Tâches : </p>
-                    <p data-i18n="expText1">
-                        Automatisation de tests fonctionnels et non-régression sur Ocean l'un des modules de SAP Analytics Cloud intégré à Microsoft Excel.
+        <!-- Formulaire Contact -->
+        <section id="contact" class="mx-auto max-w-6xl px-6 py-20">
+            <div class="reveal rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-md">
+                <!-- Titre -->
+                <div class="mb-10 text-center">
+                    <h2 class="text-3xl font-bold text-white md:text-4xl">
+                        Contact
+                    </h2>
+                    <p class="mt-3 text-slate-400">
+                        Intéressé par une collaboration, une mission ou une opportunité ?
                     </p>
-                    <p data-i18n="expText_1">
-                        Comparer les outils et proposer la solution la plus pertinente.
-                    </p>
-                    <p>---</p>
-                    <p class="tech-used"> Techno: Java · Selenium · Ranorex</p>
                 </div>
 
-                <div class="timeline-item">
-                    <h3 data-i18n="expIntern2">Opinaka — Stagiaire en développement</h3>
-                    <p data-i18n="expTask" class="task"> Tâches : </p>
-                    <p data-i18n="expText2">
-                        Développement de plugins Elasticsearch et interfaces via Strapi & Gatsby.
-                    </p>
-                    <p data-i18n="expText_2">
-                        Création d'une liste déroulante JSON des données.
-                    </p>
-                    <p>---</p>
-                    <p class="tech-used">Techno: Flutter/Dart · Strapi/Gatsby · Elasticsearch/Kibana</p>
-                </div>
+                <div class="grid gap-8 md:grid-cols-2">
+                    <!-- Infos directes -->
+                    <div class="space-y-5 text-slate-300">
+                        <div>
+                            <p class="text-sm uppercase tracking-wide text-sky-400">Email</p>
+                            <a href="mailto:tabora@et.esiea.fr" class="mt-1 inline-block transition hover:text-white">
+                                tabora@et.esiea.fr
+                            </a>
+                        </div>
 
-                <div class="timeline-item">
-                    <h3 data-i18n="expIntern3">Office d'Aviation Civile et des Aéroports (OACA Tn) — Stagiaire en développement</h3>
-                    <p class="task" data-i18n="expTask"> Tâches : </p>
-                    <p data-i18n="expText3">
-                        Mise en oeuvre d'une application de Gestion pour la déclaration de l'employeur.
-                    </p>
-                    <p data-i18n="expText_3">
-                        Mise en place d'une base de données Oracles pour les informations des utilisateurs.
-                    </p>
-                    <p>---</p>
-                    <p class="tech-used">Techno: UML · PowerAMC · Oracle Forms Developer</p>
-                </div>
+                        <div>
+                            <p class="text-sm uppercase tracking-wide text-sky-400">LinkedIn</p>
+                            <a
+                                href="https://www.linkedin.com/in/francis-tabora-afata"
+                                target="_blank"
+                                class="mt-1 inline-block transition hover:text-white"
+                            >
+                                linkedin.com/in/francis-tabora-afata
+                            </a>
+                        </div>
 
-                <div class="timeline-item">
-                    <h3 data-i18n="expIntern4">SWIM IT — Stagiaire en développement</h3>
-                    <p class="task" data-i18n="expTask"> Tâches : </p>
-                    <p data-i18n="expText4">
-                        Mise en oeuvre d'une application de la Gestion de Taxi.
-                    </p>
-                    <p data-i18n="expText_4">
-                        Création d'une base de données pour la récolte des informations des utilisateurs.
-                    </p>
-                    <p>---</p>
-                    <p class="tech-used">Techno: Visual Studio 2012 · Microsoft Access</p>
+                        <div>
+                            <p class="text-sm uppercase tracking-wide text-sky-400">Disponibilité</p>
+                            <p class="mt-1 text-slate-300">
+                                Ouvert aux opportunités web en CDD / CDI
+                            </p>
+                        </div>
+
+                        <p class="pt-2 text-sm text-slate-400">
+                        Réponse généralement sous 24 à 48h.
+                        </p>
+                    </div>
+
+                    <!-- Formulaire -->
+                    <div>
+                        <p
+                            id="success-message"
+                            class="mb-4 hidden rounded-xl bg-emerald-600/90 px-4 py-3 text-sm font-medium text-white"
+                        >
+                            Message envoyé avec succès !
+                        </p>
+
+                        <form
+                            id="contact-form"
+                            action="https://formspree.io/f/xykggrjv"
+                            method="POST"
+                            class="space-y-4"
+                        >
+                            <!-- Nom obligatoire -->
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Votre nom"
+                                autocomplete="off"
+                                required
+                                class="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-sky-400"
+                            />
+
+                            <!-- Email obligatoire -->
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Votre email"
+                                autocomplete="off"
+                                required
+                                class="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-sky-400"
+                            />
+
+                            <!-- Téléphone optionnel -->
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Votre numéro (optionnel)"
+                                autocomplete="off"
+                                class="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-sky-400"
+                            />
+
+                            <!-- Erreur email -->
+                            <p id="email-error" class="hidden text-sm text-red-400">
+                                Veuillez entrer une adresse email valide.
+                            </p>
+
+                            <!-- Message obligatoire -->
+                            <textarea
+                                name="message"
+                                placeholder="Votre message"
+                                required
+                                class="min-h-[150px] w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-white placeholder:text-slate-400 outline-none transition focus:border-sky-400"
+                            ></textarea>
+
+                            <button
+                                type="submit"
+                                class="inline-flex w-full items-center justify-center rounded-xl bg-sky-400 px-5 py-3 font-medium text-slate-950 transition hover:-translate-y-0.5 hover:opacity-90 hover:text-white"
+                            >
+                                Envoyer
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
+    </main>
 
-        <section id="education" class="section">
-            <h2 class="section-title" data-i18n="edTitle">Formation académique</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3><a href="https://www.esiea.fr/" target="_blank" title="ESIEA" data-i18n="edText1"> ESIEA - École d'Ingénieur·e·s d'un numérique utile <i class="bi bi-box-arrow-up-right website"></i></a></h3>
-                    <p data-i18n="expText5"> Formation suivie en vue de l'obtention d'un diplôme d'ingénieur</p>
-                    <p class="location"> Ivry Sur Seine/Laval/Vesale</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h3> <a href="https://www.universitecentrale.net/" target="_blank" title="Université Centrale" data-i18n="edText2">Université Centrale <i class="bi bi-box-arrow-up-right website"></i></a></h3>
-                    <p data-i18n="expText_5"> Formation suivie en vue d'une Licence Informatique </p>
-                    <p class="location"> Tunis </p>
-                </div>
+    <!-- ================= Footer ================= -->
+    <footer class="mt-20 border-t border-white/10 bg-slate-950/70">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 px-6 py-8 text-center md:flex-row md:text-left">
+            <!-- Signature -->
+            <div class="text-sm text-slate-400">
+                <p>
+                    © 2026 — Conçu et développé par
+                    <strong class="text-white">Francis Tabora Afata</strong>
+                </p>
+                <p class="mt-1">Tous droits réservés.</p>
             </div>
-        </section>
 
-
-        <section id="certifications" class="section">
-            <a href="https://www.linkedin.com/in/francis-tabora-afata/details/certifications/" target="_blank">
-                <h2 class="section-title">Certifications <i class="bi bi-box-arrow-up-right website"></i></h2>
-            </a>
-            <ul class="certifications-list">
-                <li>TOEIC, ETS Global : 2023 - 2025</li>
-                <li>Git Fundamentals </li>
-                <li>AWS Cloud Practitioner </li>
-                <li>Java SE 17 Fundamentals </li>
-                <li>Building Web Applications with Node.js and Express </li>
-                <li>JavaScript Masterclass - Zero to Job-Ready with Hands-On Projects</li>
-            </ul>
-        </section>
-
-        <section id="about" class="section">
-            <h2 class="section-title" data-i18n="aboutTitle">À propos de moi</h2>
-
-            <p class="about-text" data-i18n="aboutText">
-                Ingénieur diplômé en Software Engineering (ESIEA), passionné par le développement web et backend. 
-                J'aime comprendre les systèmes en profondeur, résoudre des problèmes complexes et livrer des solutions propres et fiables.
-                <br><br>
-                Curieux et ouvert d'esprit, je reste constamment à l'écoute des nouvelles technologies
-                et je n'hésite pas à sortir de ma zone de confort pour apprendre, m'adapter
-                et évoluer dans des environnements techniques variés.
-            </p>
-        </section>
-        <section id="contact" class="section">
-            <h2 class="section-title">Contact</h2>
-
-            <p id="success-message" class="success-message" style="text-align: center;" data-i18n="msgSuccess">Message envoyé avec succès !</p>
-            <form id="contact-form" action="https://formspree.io/f/xykggrjv" method="POST" class="contact-form">
-                
-                <input type="text" name="name" data-i18n-placeholder="namePlaceholder" placeholder="Votre Nom" autocomplete="off" required/>
-                <input type="email" name="email" id="email" data-i18n-placeholder="emailPlaceholder" placeholder="Votre Email" autocomplete="off" required/>
-                <p id="email-error" class="error-message" data-i18n="msgTextEmail"> Veuillez entrer une adresse email valide (ex: tata@gmai.com)!</p>
-                <textarea class="message" name="message" data-i18n-placeholder="messagePlaceholder" placeholder="Votre message&#10;&#10;Ex: Opportunité, projet, échange&#10;Je vous répondrai avec plaisir." required></textarea>
-                <small> Réponse généralement sous 24-48h </small>
-                <button type="submit" data-i18n="msgSend">Envoyer</button>
-            </form>
-        </section>
-
-        <footer class="footer" data-i18n="footerText">
-            <p>
-                © 2026 — Conçu et développé par <strong>Francis Tabora Afata</strong>
-                <p> Tous droits réservés. </p>
-            </p>
-
-            <div class="footer-links">
-                <a href="https://github.com/Stuna123" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/francis-tabora-afata" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://codepen.io/Francis-tabora" target="_blank" aria-label="CodePen">
-                    <i class="fab fa-codepen"></i>
+            <!-- Liens -->
+            <div class="flex items-center gap-5 text-slate-300">
+                <a
+                    href="https://github.com/Stuna123"
+                    target="_blank"
+                    aria-label="GitHub"
+                    class="transition hover:text-sky-400"
+                >
+                    <i class="fab fa-github text-xl"></i>
                 </a>
 
-                <a href="https://app.netlify.com/teams/stuna123/projects" target="_blank" aria-label="Netlify">
-                    <i class="fas fa-cloud"></i>
+                <a
+                    href="https://www.linkedin.com/in/francis-tabora-afata"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    class="transition hover:text-sky-400"
+                >
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+
+                <a
+                    href="https://codepen.io/Francis-tabora"
+                    target="_blank"
+                    aria-label="CodePen"
+                    class="transition hover:text-sky-400"
+                >
+                    <i class="fab fa-codepen text-xl"></i>
                 </a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <button id="backToTop" aria-label="Retour en haut">↑</button>
-        <script src="js/script.js"></script>
-    </body>
-
+    <!-- ================= Back To Top ================= -->
+    <button
+        id="backToTop"
+        aria-label="Retour en haut"
+        class="fixed bottom-5 right-5 hidden h-11 w-11 rounded-full border border-white/10 bg-slate-950/80 text-white shadow-lg backdrop-blur-md transition hover:-translate-y-1 hover:text-sky-400"
+    >
+        ↑
+    </button>
+    <script src="js/script.js"></script>
+  </body>
 </html>
